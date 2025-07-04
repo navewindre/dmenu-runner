@@ -1,0 +1,6 @@
+#!/bin/sh
+
+opt=$(dmenu_runner | dmenu -i -l 20)
+res=$(echo $opt | awk -F " " '{print $NF}')
+
+exo-open $res

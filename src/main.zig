@@ -8,9 +8,9 @@ const allocprint = z.fmt.allocPrint;
 const ArrayList = z.ArrayList;
 
 var paths = [_][]const u8{
+  "~/.local/share/applications",
   "/usr/share/applications",
   "/usr/local/share/applications",
-  "~/.local/share/applications",
 };
 
 const FsEntry = struct {
